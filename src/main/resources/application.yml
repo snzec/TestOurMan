@@ -1,0 +1,22 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+#    url: jdbc:mysql://localhost:3306/man_html?characterEncoding=utf-8&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+#    #url: jdbc:mysql://18.130.111.55:3306/springbootv2?characterEncoding=utf-8&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+#    username: root
+#    password:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#    url: jdbc:mysql://localhost:3306/springbootv2?characterEncoding=utf-8&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+#    #url: jdbc:mysql://18.130.111.55:3306/springbootv2?characterEncoding=utf-8&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+#    username: root
+#    password: 123456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    #云
+    url: jdbc:mysql://8.130.111.55:3306/man?characterEncoding=utf-8&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: test@ZX001
+    driver-class-name: com.mysql.cj.jdbc.Driver
