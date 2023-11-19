@@ -42,7 +42,7 @@ public class ManToHtmlConverter {
         // 目前设置的超链接地址：www.testlink_" + letterPart + "_" + numberPart + ".com，
         // 页面上显示的内容为：test_hyper_link_ + letterPart
         String newLetterPart = String.format(
-                "<a href=\"%s\" title=\"%s\" target=\"%s\">%s</a> ",
+                "<a href=\"#\" id=\"%s\" title=\"%s\" target=\"%s\">%s</a> ",
                 String.format("man%s-%s", numberPart, letterPart), // 超链接跳转的地址，例：man2-link
                 letterPart,
                 "_blank",
