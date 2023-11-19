@@ -48,7 +48,7 @@ public class ManServiceImpl extends ServiceImpl<ManMapper, SecondaryDir> impleme
         QueryWrapper<SecondaryDir> queryWrapper = new QueryWrapper<>();
         queryWrapper.select("DISTINCT primary_directory_name");
         List<SecondaryDir> father = baseMapper.selectList(queryWrapper);
-        Set<String> father_path  = new HashSet<>();
+        List<String> father_path  = new ArrayList<>();
         for (SecondaryDir tmp:father){
             father_path.add(tmp.getPrimaryDirectoryName());
         }
